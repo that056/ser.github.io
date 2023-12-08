@@ -49,7 +49,7 @@ app.post('/login',async (req,res)=>{
       const loginUser=  await User.findOne(req.body)
     console.log(loginUser);
       if(loginUser){
-        res.render('ACcountDetails',{loginUser})
+        res.render('AccountDetails',{loginUser})
       }
       else{
         res.render('notfound')
